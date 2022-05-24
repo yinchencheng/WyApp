@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appSettings>
+	<!--日志文件参数设置-->
+	<!--日志等级-->
+	<LogLevel>0</LogLevel>
+	<!--日志目录-->
+	<LogFilePath>D:/Log</LogFilePath>
+	<!--日志存在天数-->
+	<LogFileExistDay>30</LogFileExistDay>
+
+	<!--PLC参数设置-->
+		<!--欧姆龙Omron.OmronFinsNet-->
+		<!--西门子Siemens.SiemensS7Net-->
+		<!--三菱Melsec.MelsecMcNet-->
+		<!--汇川Inovance.InovanceSerialOverTcp-->	
+	<!--PLC启用标志-->
+	<PlcEnable>true</PlcEnable>
+	<!--PLC类型-->
+	<PlcType>Siemens.SiemensS7Net</PlcType>
+	<!--plc ip地址-->
+	<PlcIpAddress>127.0.0.1</PlcIpAddress>
+	<!--plc 站号/型号-->
+	<PlcDevice>1500</PlcDevice>
+	<!--plc ip端口号-->
+	<PlcIpPort>9600</PlcIpPort>
+	
+	<!--TCP客户端参数设置-->
+	<!--Tcp客户端启用标志-->
+	<TcpClientEnable>false</TcpClientEnable>
+	<!--TCP ip地址-->
+	<TcpClientIpAddress>127.0.0.1</TcpClientIpAddress>
+	<!--TCP ip端口号-->
+	<TcpClientIpPort>9600</TcpClientIpPort>
+
+	<!--TCP服务器参数设置-->
+	<!--PLC类型-->
+	<TcpServerEnable>false</TcpServerEnable>
+	<!--TCP ip地址-->
+	<TcpServerIpAddress>127.0.0.1</TcpServerIpAddress>
+	<!--TCP ip端口号-->
+	<TcpServerIpPort>9600</TcpServerIpPort>
+</appSettings>
