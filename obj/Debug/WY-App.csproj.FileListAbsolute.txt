@@ -1,4 +1,6 @@
+D:\WY-App\bin\Debug\Properties\Config.xml
 D:\WY-App\bin\Debug\Properties\AssemblyInfo.cs
+D:\WY-App\bin\Debug\Properties\App.config
 D:\WY-App\bin\Debug\WY-App.exe.config
 D:\WY-App\bin\Debug\WY-App.exe
 D:\WY-App\bin\Debug\WY-App.pdb
@@ -9,6 +11,7 @@ D:\WY-App\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
 D:\WY-App\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
 D:\WY-App\bin\Debug\Bunifu_UI_v1.5.3.dll
 D:\WY-App\bin\Debug\EasyTabs.dll
+D:\WY-App\bin\Debug\halcondotnet.dll
 D:\WY-App\bin\Debug\HslCommunication.dll
 D:\WY-App\bin\Debug\log4net.dll
 D:\WY-App\bin\Debug\Newtonsoft.Json.dll
@@ -19,6 +22,7 @@ D:\WY-App\bin\Debug\log4net.xml
 D:\WY-App\bin\Debug\Newtonsoft.Json.xml
 D:\WY-App\obj\Debug\WY-App.csproj.AssemblyReference.cache
 D:\WY-App\obj\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\WY-App\obj\Debug\WY_App.ParamSettings.resources
 D:\WY-App\obj\Debug\WY_App.MainForm.resources
 D:\WY-App\obj\Debug\WY_App.Properties.Resources.resources
 D:\WY-App\obj\Debug\WY-App.csproj.GenerateResource.cache
@@ -27,6 +31,10 @@ D:\WY-App\obj\Debug\WY-App.csproj.CoreCompileInputs.cache
 D:\WY-App\obj\Debug\WY-App.csproj.CopyComplete
 D:\WY-App\obj\Debug\WY-App.exe
 D:\WY-App\obj\Debug\WY-App.pdb
-D:\WY-App\bin\Debug\Properties\Config.xml
-D:\WY-App\bin\Debug\Properties\App.config
-D:\WY-App\bin\Debug\halcondotnet.dll
+D:\WY-App\bin\Debug\ODT.Common.dll
+D:\WY-App\bin\Debug\ODT.PowerPmacComLib.dll
+D:\WY-App\bin\Debug\Ninject.dll
+D:\WY-App\bin\Debug\Prism.dll
+D:\WY-App\bin\Debug\Renci.SshNet.dll
+D:\WY-App\bin\Debug\ODT.PMACGlobal.dll
+D:\WY-App\obj\Debug\WY_App.FormLogin.resources

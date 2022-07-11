@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Commministion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogLevel>Debug</LogLevel>
+  <LogFileExistDay>0</LogFileExistDay>
+  <PlcEnable>true</PlcEnable>
+  <PlcType>Omron.PMAC.CK3M</PlcType>
+  <PlcIpAddress>192.168.0.200</PlcIpAddress>
+  <PlcIpPort>22</PlcIpPort>
+  <PlcDevice>200</PlcDevice>
+  <TcpClientEnable>false</TcpClientEnable>
+  <TcpClientIpAddress>127.0.0.1</TcpClientIpAddress>
+  <TcpClientIpPort>9600</TcpClientIpPort>
+  <TcpServerEnable>false</TcpServerEnable>
+  <TcpServerIpAddress>127.0.0.1</TcpServerIpAddress>
+  <TcpServerIpPort>9600</TcpServerIpPort>
+</Commministion>
