@@ -41,104 +41,81 @@ namespace WY_App
 
         private void btn_Change_Click(object sender, EventArgs e)
         {
-            txt_AlarmAdd.Enabled = true;
-            txt_BackHomeAdd.Enabled = true;
-            txt_HeartBeatAdd.Enabled = true;
-            txt_PointMoveAdd.Enabled = true;
-            txt_PointMoveStepAdd.Enabled = true;
-            txt_ResetAdd.Enabled = true;
+            txt_PlcIpAddress.Enabled = true;
+            num_PLCPort.Enabled = true;
+            txt_PlcDevice.Enabled = true;
+            txt_PlcType.Enabled = true;
+            chk_PLCEnabled.Enabled = true;
+
+            txt_ServerIP.Enabled = true;
+            num_ServerPort.Enabled = true;
+            chk_ServerEnabled.Enabled = true;
+
+            txt_ClientIP.Enabled = true;
+            num_ClientPort.Enabled = true;
+            chk_ClientEnabled.Enabled = true;
+
+            txt_Trigger_Detection.Enabled = true;
+            txt_HeartBeat_Add.Enabled = true;
             txt_StartAdd.Enabled = true;
-            txt_StopAdd.Enabled = true;
-            txt_X_JogMoveAdd.Enabled = true;
-            txt_X_JogMoveRed.Enabled = true;
-            txt_X_JogMoveSpeedAdd.Enabled = true;
-            txt_X_MoveLimitAdd.Enabled = true;
-            txt_X_PointMoveAdd.Enabled = true;
-            txt_X_Read_Add.Enabled = true;
-            txt_X_RunMoveSpeedAdd.Enabled = true;
-            txt_Y_JogMoveAdd.Enabled = true;
-            txt_Y_JogMoveRed.Enabled = true;
-            txt_Y_JogMoveSpeedAdd.Enabled = true;
-            txt_Y_MoveLimitAdd.Enabled = true;
-            txt_Y_PointMoveAdd.Enabled = true;
-            txt_Y_Read_Add.Enabled = true;
-            txt_Y_RunMoveSpeedAdd.Enabled = true;
-            txt_Z_JogMoveAdd.Enabled = true;
-            txt_Z_JogMoveRed.Enabled = true;
-            txt_Z_JogMoveSpeedAdd.Enabled = true;
-            txt_Z_MoveLimitAdd.Enabled = true;
-            txt_Z_PointMoveAdd.Enabled = true;
-            txt_Z_Read_Add.Enabled = true;
-            txt_Z_RunMoveSpeedAdd.Enabled = true;
+            txt_Completion_Add.Enabled = true;
+            num_LogSaveDays.Enabled = true;
+
             btn_Save.Enabled = true;
+
         }
 
         private void ParamSettings_Load(object sender, EventArgs e)
         {
-            txt_AlarmAdd.Text = Parameter.plcParams.AlarmAdd;
-            txt_BackHomeAdd.Text = Parameter.plcParams.BackHomeAdd;
-            txt_HeartBeatAdd.Text = Parameter.plcParams.HeartBeatAdd;
-            txt_PointMoveAdd.Text = Parameter.plcParams.PointMoveAdd;
-            txt_PointMoveStepAdd.Text = Parameter.plcParams.JOGMoveStepAdd;
-            txt_ResetAdd.Text = Parameter.plcParams.ResetAdd;
-            txt_StartAdd.Text = Parameter.plcParams.StartAdd;
-            txt_StopAdd.Text = Parameter.plcParams.StopAdd;
-            txt_X_JogMoveAdd.Text = Parameter.plcParams.X_JogMoveAdd;
-            txt_X_JogMoveRed.Text = Parameter.plcParams.X_JogMoveRed;
-            txt_X_JogMoveSpeedAdd.Text = Parameter.plcParams.X_JogMoveSpeedAdd;
-            txt_X_MoveLimitAdd.Text = Parameter.plcParams.X_MoveLimitAdd;
-            txt_X_PointMoveAdd.Text = Parameter.plcParams.X_PointMoveAdd;
-            txt_X_Read_Add.Text = Parameter.plcParams.X_Read_Add;
-            txt_X_RunMoveSpeedAdd.Text = Parameter.plcParams.Y_JogMoveSpeedAdd;
-            txt_Y_JogMoveAdd.Text = Parameter.plcParams.Y_JogMoveAdd;
-            txt_Y_JogMoveRed.Text = Parameter.plcParams.Y_JogMoveRed;
-            txt_Y_JogMoveSpeedAdd.Text = Parameter.plcParams.Y_JogMoveSpeedAdd;
-            txt_Y_MoveLimitAdd.Text = Parameter.plcParams.Y_MoveLimitAdd;
-            txt_Y_PointMoveAdd.Text = Parameter.plcParams.Y_PointMoveAdd;
-            txt_Y_Read_Add.Text = Parameter.plcParams.Y_Read_Add;
-            txt_Y_RunMoveSpeedAdd.Text = Parameter.plcParams.Y_RunMoveSpeedAdd;
-            txt_Z_JogMoveAdd.Text = Parameter.plcParams.Z_JogMoveAdd;
-            txt_Z_JogMoveRed.Text = Parameter.plcParams.Z_JogMoveRed;
-            txt_Z_JogMoveSpeedAdd.Text = Parameter.plcParams.Z_JogMoveSpeedAdd;
-            txt_Z_MoveLimitAdd.Text = Parameter.plcParams.Z_MoveLimitAdd;
-            txt_Z_PointMoveAdd.Text = Parameter.plcParams.Z_PointMoveAdd;
-            txt_Z_Read_Add.Text = Parameter.plcParams.Z_Read_Add;
-            txt_Z_RunMoveSpeedAdd.Text = Parameter.plcParams.Z_RunMoveSpeedAdd;
+            txt_PlcIpAddress.Text = Parameter.commministion.PlcIpAddress;
+            num_PLCPort.Value = Parameter.commministion.PlcIpPort;
+            txt_PlcDevice.Text = Parameter.commministion.PlcDevice;
+            txt_PlcType.Text = Parameter.commministion.PlcType;
+            chk_PLCEnabled.Checked = Parameter.commministion.PlcEnable;
 
+            txt_ServerIP.Text = Parameter.commministion.TcpServerIpAddress;
+            num_ServerPort.Value = Parameter.commministion.TcpServerIpPort;
+            chk_ServerEnabled.Checked = Parameter.commministion.TcpServerEnable;
+
+            txt_ClientIP.Text = Parameter.commministion.TcpClientIpAddress;
+            num_ClientPort.Value = Parameter.commministion.TcpClientIpPort;
+            chk_ClientEnabled.Checked = Parameter.commministion.TcpClientEnable;
+
+            num_LogSaveDays.Value = Parameter.commministion.LogFileExistDay;
+
+            txt_Trigger_Detection.Text = Parameter.plcParams.Trigger_Detection;
+            txt_HeartBeat_Add.Text = Parameter.plcParams.HeartBeatAdd;
+            txt_StartAdd.Text = Parameter.plcParams.StartAdd;
+            txt_Completion_Add.Text = Parameter.plcParams.Completion;
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            Parameter.plcParams.AlarmAdd= txt_AlarmAdd.Text;
-            Parameter.plcParams.BackHomeAdd = txt_BackHomeAdd.Text;
-            Parameter.plcParams.HeartBeatAdd = txt_HeartBeatAdd.Text;
-            Parameter.plcParams.PointMoveAdd = txt_PointMoveAdd.Text;
-            Parameter.plcParams.JOGMoveStepAdd=txt_PointMoveStepAdd.Text;
-            Parameter.plcParams.ResetAdd = txt_ResetAdd.Text;
-            Parameter.plcParams.StartAdd = txt_StartAdd.Text;
-            Parameter.plcParams.StopAdd = txt_StopAdd.Text;
-            Parameter.plcParams.X_JogMoveAdd = txt_X_JogMoveAdd.Text;
-            Parameter.plcParams.X_JogMoveRed = txt_X_JogMoveRed.Text;
-            Parameter.plcParams.X_JogMoveSpeedAdd = txt_X_JogMoveSpeedAdd.Text;
-            Parameter.plcParams.X_MoveLimitAdd = txt_X_MoveLimitAdd.Text;
-            Parameter.plcParams.X_PointMoveAdd = txt_X_PointMoveAdd.Text;
-            Parameter.plcParams.X_Read_Add = txt_X_Read_Add.Text;
-            Parameter.plcParams.Y_JogMoveSpeedAdd = txt_X_RunMoveSpeedAdd.Text;
-            Parameter.plcParams.Y_JogMoveAdd = txt_Y_JogMoveAdd.Text;
-            Parameter.plcParams.Y_JogMoveRed = txt_Y_JogMoveRed.Text;
-            Parameter.plcParams.Y_JogMoveSpeedAdd = txt_Y_JogMoveSpeedAdd.Text;
-            Parameter.plcParams.Y_MoveLimitAdd = txt_Y_MoveLimitAdd.Text;
-            Parameter.plcParams.Y_PointMoveAdd = txt_Y_PointMoveAdd.Text;
-            Parameter.plcParams.Y_Read_Add = txt_Y_Read_Add.Text;
-            Parameter.plcParams.Y_RunMoveSpeedAdd = txt_Y_RunMoveSpeedAdd.Text;
-            Parameter.plcParams.Z_JogMoveAdd = txt_Z_JogMoveAdd.Text;
-            Parameter.plcParams.Z_JogMoveRed = txt_Z_JogMoveRed.Text;
-            Parameter.plcParams.Z_JogMoveSpeedAdd = txt_Z_JogMoveSpeedAdd.Text;
-            Parameter.plcParams.Z_MoveLimitAdd = txt_Z_MoveLimitAdd.Text;
-            Parameter.plcParams.Z_PointMoveAdd = txt_Z_PointMoveAdd.Text;
-            Parameter.plcParams.Z_Read_Add = txt_Z_Read_Add.Text;
-            Parameter.plcParams.Z_RunMoveSpeedAdd = txt_Z_RunMoveSpeedAdd.Text;
+            Parameter.commministion.PlcIpAddress = txt_PlcIpAddress.Text;
+            Parameter.commministion.PlcIpPort = (int)num_PLCPort.Value;
+            Parameter.commministion.PlcDevice = txt_PlcDevice.Text;
+            Parameter.commministion.PlcType = txt_PlcType.Text;
+            Parameter.commministion.PlcEnable = chk_PLCEnabled.Checked;
+
+
+            Parameter.commministion.TcpServerIpAddress = txt_ServerIP.Text;
+            Parameter.commministion.TcpServerIpPort = (int)num_ServerPort.Value;
+            Parameter.commministion.TcpServerEnable = chk_ServerEnabled.Checked;
+
+            Parameter.commministion.TcpClientIpAddress = txt_ClientIP.Text;
+            Parameter.commministion.TcpClientIpPort = (int)num_ClientPort.Value;
+            Parameter.commministion.TcpClientEnable = chk_ClientEnabled.Checked;
+
+            Parameter.commministion.LogFileExistDay = (int)num_LogSaveDays.Value;
+
+            XMLHelper.serialize<Parameter.Commministion>(Parameter.commministion, "Commministion.xml");
+
+            Parameter.plcParams.Trigger_Detection = txt_Trigger_Detection.Text;
+            Parameter.plcParams.HeartBeatAdd = txt_HeartBeat_Add.Text;
+            Parameter.plcParams.StartAdd= txt_StartAdd.Text;
+            Parameter.plcParams.Completion = txt_Completion_Add.Text;
             XMLHelper.serialize<Parameter.PLCParams>(Parameter.plcParams, "PLCParams.xml");
+            MessageBox.Show("系统参数修改，请重启软件");
             this.Close();
         }
 
@@ -146,5 +123,6 @@ namespace WY_App
         {
 
         }
+
     }
 }

@@ -153,13 +153,13 @@
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.FillColor = System.Drawing.Color.Black;
             this.btn_login.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_login.Location = new System.Drawing.Point(119, 120);
+            this.btn_login.Location = new System.Drawing.Point(126, 119);
             this.btn_login.MinimumSize = new System.Drawing.Size(1, 1);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(117, 43);
+            this.btn_login.Size = new System.Drawing.Size(102, 43);
             this.btn_login.Style = Sunny.UI.UIStyle.Custom;
             this.btn_login.TabIndex = 22;
-            this.btn_login.Text = "登录(&E)";
+            this.btn_login.Text = "登录";
             this.btn_login.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
@@ -179,7 +179,7 @@
             this.bunifuCustomTextbox2.Location = new System.Drawing.Point(60, 79);
             this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
             this.bunifuCustomTextbox2.PasswordChar = '*';
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(228, 21);
+            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(240, 21);
             this.bunifuCustomTextbox2.TabIndex = 1;
             this.bunifuCustomTextbox2.TextChanged += new System.EventHandler(this.bunifuCustomTextbox2_TextChanged);
             // 
