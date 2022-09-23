@@ -61,7 +61,7 @@ namespace WY_App.Utility
             /// <summary>
             /// plc 站号/型号
             /// </summary>
-            public int PlcDevice;
+            public string PlcDevice;
 
             /// <summary>
             /// Tcp客户端启用标志
@@ -112,13 +112,13 @@ namespace WY_App.Utility
                 //PLC 地址
                 PlcIpAddress = "127.0.0.1";
                 //PLC站号/型号
-                PlcDevice = 200;
+                PlcDevice = "200";
                 //PLC 端口号
                 PlcIpPort = 9600;
 
                 //--TCP客户端参数设置--
                 //Tcp客户端启用标志
-                TcpClientEnable = false;
+                TcpClientEnable = true;
                 //TCP 客户端 地址
                 TcpClientIpAddress = "127.0.0.1";
                 //TCP 客户端 端口号
@@ -138,85 +138,41 @@ namespace WY_App.Utility
 
         public class PLCParams
         {
-            public string AlarmAdd;
-            public string BackHomeAdd;
+            public string Trigger_Detection;
+            public string Completion;
             public string HeartBeatAdd;
-            public string PointMoveAdd;
-            public string JOGMoveStepAdd;
-            public string ResetAdd;
             public string StartAdd;
-            public string StopAdd;
-            public string X_JogMoveAdd;
-            public string X_JogMoveRed;
-            public string X_JogMoveSpeedAdd;
-            public string X_MoveLimitAdd;
-            public string X_PointMoveAdd;
-            public string X_Read_Add;
-            public string X_RunMoveSpeedAdd;
-            public string Y_JogMoveAdd;
-            public string Y_JogMoveRed;
-            public string Y_JogMoveSpeedAdd;
-            public string Y_MoveLimitAdd;
-            public string Y_PointMoveAdd;
-            public string Y_Read_Add;
-            public string Y_RunMoveSpeedAdd;
-            public string Z_JogMoveAdd;
-            public string Z_JogMoveRed;
-            public string Z_JogMoveSpeedAdd;
-            public string Z_MoveLimitAdd;
-            public string Z_PointMoveAdd;
-            public string Z_Read_Add;
-            public string Z_RunMoveSpeedAdd;
-
-            public double X_JOG_Move_Speed;
-            public double Y_JOG_Move_Speed;
-            public double Z_JOG_Move_Speed;
-            public double JOG_Step;
-            public double X_Run_Move_Speed;
-            public double Y_Run_Move_Speed;
-            public double Z_Run_Move_Speed;
-
+           
             public PLCParams()
             {
-                AlarmAdd = "D100";
-                BackHomeAdd = "D100";
+                Trigger_Detection = "D100";
+                Completion = "D100";
                 HeartBeatAdd = "D102";
-                PointMoveAdd = "D104";
-                ResetAdd = "D106";
-                StartAdd = "D108";
-                StopAdd = "D108";
-                X_JogMoveAdd = "D110";
-                X_JogMoveRed = "D112";
-                X_JogMoveSpeedAdd = "D114";
-                X_MoveLimitAdd = "D116";
-                X_PointMoveAdd = "D118";
-                X_Read_Add = "D120";
-                X_RunMoveSpeedAdd = "D122";
-                Y_JogMoveAdd = "D124";
-                Y_JogMoveRed = "D126";
-                Y_JogMoveSpeedAdd = "D128";
-                Y_MoveLimitAdd = "D130";
-                Y_PointMoveAdd = "D132";
-                Y_Read_Add = "D134";
-                Y_RunMoveSpeedAdd = "D136";
-                Z_JogMoveAdd = "D138";
-                Z_JogMoveRed = "D140";
-                Z_JogMoveSpeedAdd = "D142";
-                Z_MoveLimitAdd = "D144";
-                Z_PointMoveAdd = "D146";
-                Z_Read_Add = "D148";
-                Z_RunMoveSpeedAdd = "D150";  
+                HeartBeatAdd = "D104";                               
+            }
+        }
 
-                X_JOG_Move_Speed = 0;
-                Y_JOG_Move_Speed = 0;
-                Z_JOG_Move_Speed = 0;
-                X_Run_Move_Speed = 0;
-                Y_Run_Move_Speed = 0;
-                Z_Run_Move_Speed = 0;
-                JOG_Step = 10;               
+        public class Counts
+        {
+            public int Counts1;
+            public int Counts2; 
+            public int Counts3; 
+            public int Counts4; 
+            public int Counts5;
+            public int Counts6;
+
+            public Counts()
+            {
+                Counts1 = 0;
+                Counts2 = 0;
+                Counts3 = 0;
+                Counts4 = 0;
+                Counts5 = 0;
+                Counts6 = 0;
             }
         }
 
         public static PLCParams plcParams = new PLCParams();
+        public static Counts counts = new Counts();
     }
 }

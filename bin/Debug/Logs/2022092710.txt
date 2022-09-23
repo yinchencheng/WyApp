@@ -1,0 +1,83 @@
+﻿[信息] 2022-09-27 10:05:50.961 thread:[015] 链接成功
+[信息] 2022-09-27 10:05:51.954 thread:[001] 初始化完成
+[错误] 2022-09-27 10:05:52.998 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:05:56.024 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:05:59.042 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:06:02.068 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:06:04.149 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:06:04.149 thread:[001] 127.0.0.1:9600:inspect
+[错误] 2022-09-27 10:06:11.885 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:06:14.903 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:06:17.912 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:06:19.275 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:06:19.280 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:06:45.443 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:07:04.568 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:07:49.399 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:07:52.297 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:07:52.299 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:07:56.023 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:13:39.421 thread:[011] 链接成功
+[信息] 2022-09-27 10:13:40.425 thread:[001] 初始化完成
+[错误] 2022-09-27 10:13:41.446 thread:[009] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:13:42.770 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:13:43.181 thread:[001] 127.0.0.1:9600:11
+[错误] 2022-09-27 10:13:45.369 thread:[009] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:14:04.767 thread:[016] 链接成功
+[信息] 2022-09-27 10:14:05.769 thread:[001] 初始化完成
+[错误] 2022-09-27 10:14:06.805 thread:[014] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:14:07.318 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:14:07.728 thread:[001] 127.0.0.1:9600:22
+[信息] 2022-09-27 10:24:22.412 thread:[015] 链接成功
+[信息] 2022-09-27 10:24:23.412 thread:[001] 初始化完成
+[错误] 2022-09-27 10:24:24.438 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:24:25.486 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:24:25.874 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:24:27.446 thread:[013] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:39:56.453 thread:[011] 链接成功
+[信息] 2022-09-27 10:39:57.441 thread:[001] 初始化完成
+[错误] 2022-09-27 10:39:58.497 thread:[009] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:39:59.710 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:40:00.422 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:40:02.174 thread:[009] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:40:07.408 thread:[009] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[错误] 2022-09-27 10:40:17.418 thread:[009] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:41:23.426 thread:[013] 链接成功
+[信息] 2022-09-27 10:41:24.424 thread:[001] 初始化完成
+[错误] 2022-09-27 10:41:25.445 thread:[011] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:41:26.493 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:41:26.876 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:41:28.713 thread:[011] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:41:41.855 thread:[012] 链接成功
+[信息] 2022-09-27 10:41:42.858 thread:[001] 初始化完成
+[错误] 2022-09-27 10:41:43.869 thread:[010] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:41:44.333 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:41:44.722 thread:[001] 127.0.0.1:9600:22
+[信息] 2022-09-27 10:42:06.418 thread:[010] 链接成功
+[信息] 2022-09-27 10:42:07.425 thread:[001] 初始化完成
+[错误] 2022-09-27 10:42:08.437 thread:[008] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:42:08.650 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:42:09.039 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:42:11.598 thread:[008] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:43:57.501 thread:[013] 链接成功
+[信息] 2022-09-27 10:43:58.501 thread:[001] 初始化完成
+[错误] 2022-09-27 10:43:59.527 thread:[011] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:44:00.106 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:44:00.499 thread:[001] 127.0.0.1:9600:22
+[信息] 2022-09-27 10:46:44.077 thread:[012] 链接成功
+[信息] 2022-09-27 10:46:45.083 thread:[001] 初始化完成
+[错误] 2022-09-27 10:46:46.110 thread:[010] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:46:46.785 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:46:47.202 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:46:51.199 thread:[010] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:48:51.401 thread:[014] 链接成功
+[信息] 2022-09-27 10:48:52.408 thread:[001] 初始化完成
+[错误] 2022-09-27 10:48:53.437 thread:[012] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:48:53.818 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:48:54.227 thread:[001] 127.0.0.1:9600:22
+[错误] 2022-09-27 10:48:56.612 thread:[012] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:49:40.187 thread:[011] 链接成功
+[信息] 2022-09-27 10:49:41.186 thread:[001] 初始化完成
+[错误] 2022-09-27 10:49:42.245 thread:[009] Omron.PMAC.CK3M初始化失败: : 未能加载文件或程序集“Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106”或它的某一个依赖项。系统找不到指定的文件。
+[信息] 2022-09-27 10:49:42.623 thread:[001] 127.0.0.1:9600:S1
+[信息] 2022-09-27 10:49:43.030 thread:[001] 127.0.0.1:9600:22

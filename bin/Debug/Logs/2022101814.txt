@@ -1,0 +1,278 @@
+﻿[信息] 2022-10-18 14:31:28.631 thread:[001] 初始化完成
+[错误] 2022-10-18 14:31:29.682 thread:[009] TcpClientIP:127.0.0.1Port:9600链接失败: : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9600
+[信息] 2022-10-18 14:31:31.222 thread:[009] TcpClientIP:127.0.0.1Port:9600链接成功
+[信息] 2022-10-18 14:31:31.222 thread:[009] 127.0.0.1:9600发送数据:Tcp客户端接入
+[信息] 2022-10-18 14:31:31.419 thread:[009] 127.0.0.1:9600接收数据:inspect
+[错误] 2022-10-18 14:31:31.689 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:31:36.731 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:31:41.772 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[信息] 2022-10-18 14:31:42.103 thread:[001] 软件关闭。
+[信息] 2022-10-18 14:33:37.169 thread:[001] 初始化完成
+[错误] 2022-10-18 14:33:38.212 thread:[009] TcpClientIP:127.0.0.1Port:9600链接失败: : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9600
+[信息] 2022-10-18 14:33:39.220 thread:[009] TcpClientIP:127.0.0.1Port:9600链接成功
+[信息] 2022-10-18 14:33:39.220 thread:[009] 127.0.0.1:9600发送数据:Tcp客户端接入
+[信息] 2022-10-18 14:33:39.342 thread:[009] 127.0.0.1:9600接收数据:idle
+[错误] 2022-10-18 14:33:40.260 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:33:45.302 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[信息] 2022-10-18 14:33:47.663 thread:[001] 软件关闭。
+[信息] 2022-10-18 14:36:25.971 thread:[001] 初始化完成
+[错误] 2022-10-18 14:36:27.033 thread:[009] TcpClientIP:127.0.0.1Port:9600链接失败: : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9600
+[信息] 2022-10-18 14:36:28.057 thread:[009] TcpClientIP:127.0.0.1Port:9600链接成功
+[信息] 2022-10-18 14:36:28.058 thread:[009] 127.0.0.1:9600发送数据:Tcp客户端接入
+[信息] 2022-10-18 14:36:28.179 thread:[009] 127.0.0.1:9600接收数据:idle
+[错误] 2022-10-18 14:36:29.004 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:36:34.061 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:36:39.100 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[信息] 2022-10-18 14:36:42.581 thread:[001] 软件关闭。
+[信息] 2022-10-18 14:37:44.024 thread:[001] 初始化完成
+[错误] 2022-10-18 14:37:45.084 thread:[009] TcpClientIP:127.0.0.1Port:9600链接失败: : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9600
+[信息] 2022-10-18 14:37:46.097 thread:[009] TcpClientIP:127.0.0.1Port:9600链接成功
+[信息] 2022-10-18 14:37:46.098 thread:[009] 127.0.0.1:9600发送数据:Tcp客户端接入
+[信息] 2022-10-18 14:37:46.219 thread:[009] 127.0.0.1:9600接收数据:idle
+[错误] 2022-10-18 14:37:47.061 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:37:52.109 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:37:57.166 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:38:02.202 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:38:07.257 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:38:12.297 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:38:17.361 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:38:22.395 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[信息] 2022-10-18 14:38:26.221 thread:[001] 软件关闭。
+[信息] 2022-10-18 14:39:02.911 thread:[001] 初始化完成
+[错误] 2022-10-18 14:39:03.985 thread:[009] TcpClientIP:127.0.0.1Port:9600链接失败: : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9600
+[信息] 2022-10-18 14:39:05.001 thread:[009] TcpClientIP:127.0.0.1Port:9600链接成功
+[信息] 2022-10-18 14:39:05.002 thread:[009] 127.0.0.1:9600发送数据:Tcp客户端接入
+[信息] 2022-10-18 14:39:05.125 thread:[009] 127.0.0.1:9600接收数据:idle
+[错误] 2022-10-18 14:39:05.952 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:11.003 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:16.048 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:21.090 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:26.141 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:31.178 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:36.235 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:41.293 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:46.329 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:51.373 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:39:56.428 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:01.460 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:06.492 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:11.552 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:16.617 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:21.657 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:26.697 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:31.737 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:36.782 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:41.837 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:46.875 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:51.905 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:40:56.944 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:01.975 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:07.009 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:12.081 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:17.113 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:22.156 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:27.201 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:32.250 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:37.294 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:42.327 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:47.364 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:52.422 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:41:57.463 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:02.496 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:07.534 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:12.597 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:17.651 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:22.690 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:27.730 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:32.785 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:37.828 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:42.861 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:47.911 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:52.926 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:42:57.971 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:03.017 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:08.044 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:13.108 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:18.152 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:23.190 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:28.243 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:33.292 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:38.340 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:43.361 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:48.403 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:53.468 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:43:58.520 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:03.570 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:08.602 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:13.652 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:18.697 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:23.745 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:28.800 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:33.846 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:38.874 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:43.894 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:48.933 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:53.982 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:44:59.019 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:04.055 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:09.101 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:14.119 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:19.176 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:24.229 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:29.290 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:34.333 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:39.375 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:44.404 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:49.463 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:54.506 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:45:59.545 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:04.587 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:09.628 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:14.652 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:19.692 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:24.734 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:29.783 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:34.831 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:39.866 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:44.936 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:49.981 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:46:55.029 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:00.096 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:05.144 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:10.175 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:15.232 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:20.282 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:25.318 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:30.361 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:35.404 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:40.437 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:45.486 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:50.530 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:47:55.580 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:00.644 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:05.671 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:10.727 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:15.749 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:20.787 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:25.818 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:30.862 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:35.902 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:40.955 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:46.010 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:51.074 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:48:56.119 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:01.146 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:06.182 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:11.223 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:16.266 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:21.314 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:26.382 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:31.414 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:36.445 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:41.498 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:46.556 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:51.579 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:49:56.603 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:01.637 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:06.688 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:11.747 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:16.794 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:21.824 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:26.853 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:31.899 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:36.937 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:41.973 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:47.007 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:52.051 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:50:57.089 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:02.124 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:07.170 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[信息] 2022-10-18 14:51:07.592 thread:[001] 窗体最小化。
+[错误] 2022-10-18 14:51:12.210 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:17.241 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:22.292 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:27.338 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:32.390 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:37.440 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:42.491 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:47.526 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:52.574 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:51:57.614 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:02.674 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:07.707 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:12.744 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:17.777 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:22.802 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:27.837 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:32.864 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:37.904 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:42.945 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:47.977 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:52.993 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:52:58.047 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:03.077 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:08.144 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:13.188 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:18.209 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:23.259 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:28.284 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:33.339 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:38.387 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:43.418 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:48.470 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:53.517 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:53:58.576 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:03.623 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:08.657 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:13.725 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:18.759 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:23.797 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:28.822 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:33.858 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:38.907 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:43.947 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:48.971 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:54.024 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:54:59.059 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:04.098 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:09.127 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:14.173 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:19.221 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:24.263 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:29.305 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:34.343 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:39.390 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:44.432 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:49.482 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:54.518 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:55:59.555 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:04.593 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:09.643 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:14.702 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:19.744 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:24.763 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:29.803 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:34.866 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:39.911 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:44.953 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:49.989 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:56:55.035 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:00.084 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:05.112 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:10.149 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:15.191 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:20.229 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:25.263 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:30.311 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:35.363 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:40.414 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:45.470 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:50.509 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:57:55.545 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:58:00.593 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:58:05.649 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:58:10.700 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:58:15.741 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:58:20.777 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[错误] 2022-10-18 14:58:25.822 thread:[005] ModbusTcpNet连接失败:IP127.0.0.1  Port:502
+[信息] 2022-10-18 14:58:27.208 thread:[001] 软件关闭。

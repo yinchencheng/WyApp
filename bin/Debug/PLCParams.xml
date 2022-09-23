@@ -1,40 +1,7 @@
 <?xml version="1.0"?>
 <PLCParams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <AlarmAdd>D100</AlarmAdd>
-  <BackHomeAdd>D100</BackHomeAdd>
-  <HeartBeatAdd>D102</HeartBeatAdd>
-  <PointMoveAdd>D104</PointMoveAdd>
-  <PointMoveStepAdd />
-  <ResetAdd>D106</ResetAdd>
-  <StartAdd>D108</StartAdd>
-  <StopAdd>D108</StopAdd>
-  <X_JogMoveAdd>#1jog+</X_JogMoveAdd>
-  <X_JogMoveRed>D112</X_JogMoveRed>
-  <X_JogMoveSpeedAdd>D114</X_JogMoveSpeedAdd>
-  <X_MoveLimitAdd>D116</X_MoveLimitAdd>
-  <X_PointMoveAdd>D118</X_PointMoveAdd>
-  <X_Read_Add>D120</X_Read_Add>
-  <X_RunMoveSpeedAdd>D122</X_RunMoveSpeedAdd>
-  <Y_JogMoveAdd>D124</Y_JogMoveAdd>
-  <Y_JogMoveRed>D126</Y_JogMoveRed>
-  <Y_JogMoveSpeedAdd>D128</Y_JogMoveSpeedAdd>
-  <Y_MoveLimitAdd>D130</Y_MoveLimitAdd>
-  <Y_PointMoveAdd>D132</Y_PointMoveAdd>
-  <Y_Read_Add>D134</Y_Read_Add>
-  <Y_RunMoveSpeedAdd>D136</Y_RunMoveSpeedAdd>
-  <Z_JogMoveAdd>D138</Z_JogMoveAdd>
-  <Z_JogMoveRed>D140</Z_JogMoveRed>
-  <Z_JogMoveSpeedAdd>D142</Z_JogMoveSpeedAdd>
-  <Z_MoveLimitAdd>D144</Z_MoveLimitAdd>
-  <Z_PointMoveAdd>D146</Z_PointMoveAdd>
-  <Z_Read_Add>D148</Z_Read_Add>
-  <Z_RunMoveSpeedAdd>D150</Z_RunMoveSpeedAdd>
-  <JOG_StepAdd>D152</JOG_StepAdd>
-  <X_JOG_Move_Speed>244</X_JOG_Move_Speed>
-  <Y_JOG_Move_Speed>33</Y_JOG_Move_Speed>
-  <Z_JOG_Move_Speed>4</Z_JOG_Move_Speed>
-  <JOG_Step>0</JOG_Step>
-  <X_Run_Move_Speed>0</X_Run_Move_Speed>
-  <Y_Run_Move_Speed>0</Y_Run_Move_Speed>
-  <Z_Run_Move_Speed>0</Z_Run_Move_Speed>
+  <Trigger_Detection>250</Trigger_Detection>
+  <Completion />
+  <HeartBeatAdd />
+  <StartAdd>260</StartAdd>
 </PLCParams>
