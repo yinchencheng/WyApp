@@ -279,10 +279,15 @@ namespace WY_App
                         else
                         {
                             testReslut = false;
-                            for (int j = 0; j < 16; j++)
+                            for (int j = 0; j < 11; j++)
                             {
                                 uiDataGridView1.Rows[j].Cells[1].Value = 0;
                                 uiDataGridView1.Rows[j].Cells[1].Style.BackColor = Color.Black;
+                            }
+                            for (int j = 0; j < 5; j++)
+                            {
+                                uiDataGridView1.Rows[j + 11].Cells[1].Value = count[j];
+                                uiDataGridView1.Rows[j + 11].Cells[1].Style.BackColor = Color.Black;
                             }
                         }
                         if (detectioresult[2].Contains("1") && testReslut && detectioresult[2].Contains("1"))//模板匹配、瑕疵、尺寸OK
@@ -384,11 +389,16 @@ namespace WY_App
                         else
                         {
                             testReslut = false;
-                            for (int j = 0; j < 16; j++)
+                            for (int j = 0; j < 11; j++)
                             {
                                 uiDataGridView1.Rows[j].Cells[2].Value = 0;
                                 uiDataGridView1.Rows[j].Cells[2].Style.BackColor = Color.Black;
-                            }                          
+                            }
+                            for (int j = 0; j < 5; j++)
+                            {
+                                uiDataGridView1.Rows[j + 11].Cells[2].Value = count[j];
+                                uiDataGridView1.Rows[j + 11].Cells[2].Style.BackColor = Color.Black;
+                            }
                         }
 
                         if (detectioresult[2].Contains("1") && testReslut && detectioresult[2].Contains("1"))//模板匹配、瑕疵、尺寸OK
