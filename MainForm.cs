@@ -34,7 +34,8 @@ namespace WY_App
         string[] detectioresult;
         int[] count;
         int[] count2;
-        double[] value = new double[18];
+        double[] value = new double[19];
+        public static Parameter.specification[] specifications;
         public MainForm()
         {
             InitializeComponent();
@@ -58,6 +59,20 @@ namespace WY_App
                 Parameter.counts = new Parameter.Counts();
                 XMLHelper.serialize<Parameter.Counts>(Parameter.counts, "CountsParams.xml");
             }
+
+            try
+            {
+                Parameter.specifications = XMLHelper.BackSerialize<Parameter.Specifications>("Specifications.xml");               
+            }
+            catch
+            {
+                Parameter.specifications = new Parameter.Specifications();
+                XMLHelper.serialize<Parameter.Specifications>(Parameter.specifications, "Specifications.xml");
+            }
+            specifications = new Parameter.specification[11] {
+            Parameter.specifications.总宽, Parameter.specifications.总长, Parameter.specifications.料宽, Parameter.specifications.胶宽,
+            Parameter.specifications.长端, Parameter.specifications.左短端, Parameter.specifications.右短端, Parameter.specifications.左肩宽,
+            Parameter.specifications.右肩宽, Parameter.specifications.左肩高, Parameter.specifications.右肩高};
             count = new int[6] { Parameter.counts.Counts1, Parameter.counts.Counts2, Parameter.counts.Counts3, Parameter.counts.Counts4, Parameter.counts.Counts5, Parameter.counts.Counts6 };
             count2 = new int[6] { Parameter.counts.Counts21, Parameter.counts.Counts22, Parameter.counts.Counts23, Parameter.counts.Counts24, Parameter.counts.Counts25, Parameter.counts.Counts26 };
 
@@ -91,7 +106,8 @@ namespace WY_App
             uiDataGridView1.Rows.Add(row13);
             DataGridViewRow row14 = new DataGridViewRow();
             uiDataGridView1.Rows.Add(row14);
-            
+            DataGridViewRow row15 = new DataGridViewRow();
+            uiDataGridView1.Rows.Add(row15);
 
             uiDataGridView1.Rows[0].Cells[0].Value = "总宽";
             uiDataGridView1.Rows[1].Cells[0].Value = "总长";
@@ -99,25 +115,26 @@ namespace WY_App
             uiDataGridView1.Rows[3].Cells[0].Value = "胶宽";
             uiDataGridView1.Rows[4].Cells[0].Value = "长端";
 
-            uiDataGridView1.Rows[5].Cells[0].Value = "短端";
-            uiDataGridView1.Rows[6].Cells[0].Value = "右肩高";
-            uiDataGridView1.Rows[7].Cells[0].Value = "右肩宽";
-            uiDataGridView1.Rows[8].Cells[0].Value = "左肩高";
-            uiDataGridView1.Rows[9].Cells[0].Value ="左肩宽";
+            uiDataGridView1.Rows[5].Cells[0].Value = "左短端";
+            uiDataGridView1.Rows[6].Cells[0].Value = "右短端";
+            uiDataGridView1.Rows[7].Cells[0].Value = "右肩高";
+            uiDataGridView1.Rows[8].Cells[0].Value = "右肩宽";
+            uiDataGridView1.Rows[9].Cells[0].Value = "左肩高";
+            uiDataGridView1.Rows[10].Cells[0].Value ="左肩宽";
 
-            uiDataGridView1.Rows[10].Cells[0].Value = "气泡";
-            uiDataGridView1.Rows[11].Cells[0].Value = "黑点";
-            uiDataGridView1.Rows[12].Cells[0].Value = "刺伤";
-            uiDataGridView1.Rows[13].Cells[0].Value = "划伤";
-            uiDataGridView1.Rows[14].Cells[0].Value = "压痕";
+            uiDataGridView1.Rows[11].Cells[0].Value = "气泡";
+            uiDataGridView1.Rows[12].Cells[0].Value = "黑点";
+            uiDataGridView1.Rows[13].Cells[0].Value = "刺伤";
+            uiDataGridView1.Rows[14].Cells[0].Value = "划伤";
+            uiDataGridView1.Rows[15].Cells[0].Value = "压痕";
             
             uiDataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
             
             
             for (int i = 0; i < 5; i++)
             {
-                uiDataGridView1.Rows[i + 10].Cells[1].Value = count[i];
-                uiDataGridView1.Rows[i + 10].Cells[2].Value = count2[i];
+                uiDataGridView1.Rows[i + 11].Cells[1].Value = count[i];
+                uiDataGridView1.Rows[i + 11].Cells[2].Value = count2[i];
             }
             myThread = new Thread(initAll);
             myThread.IsBackground = true;
@@ -206,15 +223,17 @@ namespace WY_App
 
         }
         static string movefile;
+        bool testReslut = true;
         private void MainRun()
         {
             while (true)
             {
                 ushort ushort100 = HslCommunication._NetworkTcpDevice.ReadUInt16("250").Content; // 读取寄存器100的ushort值              
                 if (ushort100 == 49)
-                {                    
+                {
+                    testReslut = true;
                     HslCommunication._NetworkTcpDevice.Write("250", 0);
-                    AlarmList.Add(ushort100.ToString());
+                    AlarmList.Add("IP:" + Parameter.commministion.PlcIpAddress + "Port:" + Parameter.commministion.PlcIpPort + "触发信号:" +ushort100.ToString());
                     TcpServer.TcpServerReceiveMsg = "";
                     string tcpReciveStr = TcpClient.tcpClientSend("S1");
                     LogHelper.Log.WriteInfo(tcpReciveStr);
@@ -227,52 +246,82 @@ namespace WY_App
                         {
                             value[index] = Convert.ToDouble(detectioresult[index + 1]) / 1000;
                         }
-                        if (value != null)
+
+                        if (value != null && detectioresult[2].Contains("1"))
                         {
-                            for (int j = 0; j < 10; j++)
+                            for (int j = 0; j < 11; j++)
                             {
-                                uiDataGridView1.Rows[j].Cells[1].Value = value[j + 8];
+                                uiDataGridView1.Rows[j].Cells[1].Value = value[j + 8] + specifications[j].adjustZ;
+                                if (value[j + 8] + specifications[j].adjustZ <= specifications[j].value + specifications[j].max && value[j + 8] + specifications[j].adjustZ >= specifications[j].value + specifications[j].min)
+                                {
+                                    uiDataGridView1.Rows[j].Cells[1].Style.BackColor = Color.Green;
+                                }
+                                else
+                                {
+                                    uiDataGridView1.Rows[j].Cells[1].Style.BackColor = Color.Red;
+                                    testReslut = false;
+                                }
                             }
                             for (int j = 0; j < 5; j++)
                             {
-                                if (value[j+3] != 0.001)
+                                if (!detectioresult[j + 4].Contains("1") )
                                 {
                                     count[j]++;
-                                    uiDataGridView1.Rows[j + 10].Cells[1].Value = count[j];
+                                    uiDataGridView1.Rows[j + 11].Cells[1].Value = count[j];
+                                    uiDataGridView1.Rows[j + 11].Cells[1].Style.BackColor = Color.Red;
+                                }
+                                else
+                                {
+                                    uiDataGridView1.Rows[j + 11].Cells[1].Style.BackColor = Color.Green;
                                 }
                             }
                         }
-                        Thread.Sleep(500);
-                        if (detectioresult[1].Contains("1"))
+                        else
+                        {
+                            testReslut = false;
+                            for (int j = 0; j < 16; j++)
+                            {
+                                uiDataGridView1.Rows[j].Cells[1].Value = 0;
+                                uiDataGridView1.Rows[j].Cells[1].Style.BackColor = Color.Black;
+                            }
+                        }
+                        if (detectioresult[2].Contains("1") && testReslut && detectioresult[2].Contains("1"))//模板匹配、瑕疵、尺寸OK
                         {
                             HslCommunication._NetworkTcpDevice.Write("200", 5);
-                            AlarmList.Add("5");
-                            moveImage("正面", 0);
+                            AlarmList.Add("IP:" + Parameter.commministion.PlcIpAddress + "Port:" + Parameter.commministion.PlcIpPort + "写入:" + "5");
                         }
                         else
                         {
                             HslCommunication._NetworkTcpDevice.Write("200", 6);
-                            AlarmList.Add("6");
-
-                            if (detectioresult[2].Contains("1"))
-                            {
-                                if (detectioresult[3].Contains("1"))
-                                {
-                                    moveImage("正面", 1);
-                                }
-                                for (int i = 0; i < 6; i++)
-                                {
-                                    if (!detectioresult[i + 3].Contains("1"))
-                                    {
-                                        moveImage("正面", i + 1);
-                                    }
-                                }
-
-                            }
-                            else
+                            AlarmList.Add("IP:" + Parameter.commministion.PlcIpAddress + "Port:" + Parameter.commministion.PlcIpPort + "写入:" + "6");
+                        }
+                        
+                        Thread.Sleep(500);
+                        if (detectioresult[2].Contains("1") && testReslut && detectioresult[2].Contains("1"))//模板匹配、瑕疵、尺寸OK
+                        {                           
+                            moveImage("正面", 0);
+                        }
+                        else
+                        {                           
+                            if (!detectioresult[2].Contains("1")) //无产品
                             {
                                 moveImage("正面", 1);
                             }
+                            if (!testReslut)//尺寸NG
+                            {
+                                moveImage("正面", 2);
+                            }
+                            if (!detectioresult[1].Contains("1"))//瑕疵NG
+                            {                                         
+                                for (int i = 0; i < 5; i++)//瑕疵分类
+                                {
+                                    if (!detectioresult[i + 4].Contains("1"))
+                                    {
+                                        moveImage("正面", i + 1);
+                                    }
+                               }
+                            }
+                            
                         }
                     }                   
                     detectioresult = null;                  
@@ -284,7 +333,7 @@ namespace WY_App
                         Directory.Delete(@"E:\VisionDetect\InspectImage\", true);
                     }    
                     HslCommunication._NetworkTcpDevice.Write("250", 0);
-                    AlarmList.Add(ushort100.ToString());
+                    AlarmList.Add("IP:" + Parameter.commministion.PlcIpAddress +"Port:" + Parameter.commministion.PlcIpPort + "触发信号:" + ushort100.ToString());
                     TcpServer.TcpServerReceiveMsg = "";
 
                     string tcpReciveStr = TcpClient.tcpClientSend("S2");
@@ -297,59 +346,91 @@ namespace WY_App
                     detectioresult = tcpReciveStr.Split('+');
                     if (detectioresult.Length > 5)
                     {
-                        for (int index = 0; index < detectioresult.Count()-1; index++)
+
+                        for (int index = 0; index < detectioresult.Count() - 1; index++)
                         {
-                            value[index] = Convert.ToDouble(detectioresult[index+1]) / 1000;
+                            value[index] = Convert.ToDouble(detectioresult[index + 1]) / 1000;
                         }
-                        if (value != null)
+
+                        if (value != null && detectioresult[2].Contains("1"))
                         {
-                            for (int j = 0; j < 10; j++)
+                            for (int j = 0; j < 11; j++)
                             {
-                                uiDataGridView1.Rows[j].Cells[2].Value = value[j + 8];
+                                uiDataGridView1.Rows[j].Cells[2].Value = value[j + 8] + specifications[j].adjustF;
+                                if (value[j + 8] + specifications[j].adjustF <= specifications[j].value + specifications[j].max && value[j + 8] + specifications[j].adjustF >= specifications[j].value + specifications[j].min)
+                                {
+                                    uiDataGridView1.Rows[j].Cells[2].Style.BackColor = Color.Green;
+                                }
+                                else
+                                {
+                                    uiDataGridView1.Rows[j].Cells[2].Style.BackColor = Color.Red;
+                                    testReslut = false;
+                                }
                             }
                             for (int j = 0; j < 5; j++)
                             {
-                                if (value[j + 3] != 0.001)
+                                if (!detectioresult[j + 4].Contains("1"))
                                 {
                                     count2[j]++;
-                                    uiDataGridView1.Rows[j + 10].Cells[2].Value = count2[j];
+                                    uiDataGridView1.Rows[j + 11].Cells[2].Value = count2[j];
+                                    uiDataGridView1.Rows[j + 11].Cells[2].Style.BackColor = Color.Red;
+                                }
+                                else
+                                {
+                                    uiDataGridView1.Rows[j + 11].Cells[2].Style.BackColor = Color.Green;
                                 }
                             }
                         }
-                        Thread.Sleep(500);
-                        if (detectioresult[1].Contains("1"))
+                        else
+                        {
+                            testReslut = false;
+                            for (int j = 0; j < 16; j++)
+                            {
+                                uiDataGridView1.Rows[j].Cells[2].Value = 0;
+                                uiDataGridView1.Rows[j].Cells[2].Style.BackColor = Color.Black;
+                            }                          
+                        }
+
+                        if (detectioresult[2].Contains("1") && testReslut && detectioresult[2].Contains("1"))//模板匹配、瑕疵、尺寸OK
                         {
                             HslCommunication._NetworkTcpDevice.Write("200", 5);
-                            AlarmList.Add("5");
-                            moveImage("反面", 0);
+                            AlarmList.Add("IP:" + Parameter.commministion.PlcIpAddress + "Port:" + Parameter.commministion.PlcIpPort + "写入:" + "5");
                         }
-                        else 
+                        else
                         {
                             HslCommunication._NetworkTcpDevice.Write("200", 6);
-                            AlarmList.Add("6");
+                            AlarmList.Add("IP:" + Parameter.commministion.PlcIpAddress + "Port:" + Parameter.commministion.PlcIpPort + "写入:" + "6");
+                        }
 
-                            if (detectioresult[2].Contains("1"))
-                            {
-                                if (detectioresult[3].Contains("1"))
-                                {
-                                    moveImage("反面", 1);
-                                }
-                                for (int i = 0; i < 6; i++)
-                                {
-                                    if (!detectioresult[i + 3].Contains("1"))
-                                    {
-                                        moveImage("反面", i + 1);
-                                    }
-                                }
-
-                            }
-                            else
+                        Thread.Sleep(500);
+                        if (detectioresult[2].Contains("1") && testReslut && detectioresult[2].Contains("1"))//模板匹配、瑕疵、尺寸OK
+                        {
+                            moveImage("反面", 0);
+                        }
+                        else
+                        {
+                            if (!detectioresult[2].Contains("1")) //无产品
                             {
                                 moveImage("反面", 1);
                             }
-                        }                       
+                            if (!testReslut)//尺寸NG
+                            {
+                                moveImage("反面", 2);
+                            }
+                            if (!detectioresult[1].Contains("1"))//瑕疵NG
+                            {
+                                for (int i = 0; i < 5; i++)//瑕疵分类
+                                {
+                                    if (!detectioresult[i + 3].Contains("1"))
+                                    {
+                                        moveImage("反面", i + 3);
+                                    }
+                                }
+                            }
+
+                        }
                     }
-                   
+
                     detectioresult = null;
                 }
 
@@ -414,15 +495,7 @@ namespace WY_App
                     select x;
             movefile = f.LastOrDefault().FileName;
         }
-        static Image image;
-        private void showImage()
-        {
-            Task.Run(() =>
-            {
-                Thread.Sleep(1000);
-                
-            });
-        }
+
 
         private void  moveImage(string path , int  i)
         {
@@ -443,7 +516,7 @@ namespace WY_App
                         }
                         if (movefile != null && movefile.Contains("out"))
                         {
-                            image = Image.FromFile(movefile);
+                            Image image = Image.FromFile(movefile);
                             pictureBox1.Image = image;
                             File.Copy(movefile, ImageNameOut);
                             Thread.Sleep(50);
@@ -491,6 +564,9 @@ namespace WY_App
 
                 XMLHelper.serialize<Parameter.Counts>(Parameter.counts, "CountsParams.xml");
 
+
+                //Parameter.specifications.右短端.value = 10;
+                //XMLHelper.serialize<Parameter.Specifications>(Parameter.specifications, "Specifications.xml");
                 myThread.Abort();
                 LogHelper.Log.WriteInfo("软件关闭。");
                 Process[] allProgresse = System.Diagnostics.Process.GetProcessesByName("SGVision");
@@ -640,12 +716,12 @@ namespace WY_App
             }
         }
         #endregion
-
+        public static int formloadIndex = 0;
         private void btn_SettingMean_Click(object sender, EventArgs e)
         {
+            formloadIndex = 1;
             FormLogin flg=new FormLogin();
-            flg.ShowDialog();
-          
+            flg.ShowDialog();          
         }
 
         //    Directory.CreateDirectory(string path);//在指定路径中创建所有目录和子目录，除非已经存在
@@ -678,6 +754,7 @@ namespace WY_App
                 MainThread.Start();
                 btn_Start.Enabled = false;
                 btn_SettingMean.Enabled = false;
+                btn_SpecicationSetting.Enabled = false;
                 btn_Stop.Enabled = true;
                 btn_Close_System.Enabled = false;
                 string str = TcpClient.tcpClientSend("开始检测");
@@ -699,6 +776,7 @@ namespace WY_App
                 btn_SettingMean.Enabled = true;
                 btn_Stop.Enabled = false;
                 btn_Close_System.Enabled = true;
+                btn_SpecicationSetting.Enabled = true;
                 string str = TcpClient.tcpClientSend("停止检测");
             }
             else
@@ -717,5 +795,23 @@ namespace WY_App
             Rectangle rectangle = new Rectangle(e.RowBounds.Location.X,e.RowBounds.Location.Y,uiDataGridView1.RowHeadersWidth - 4,e.RowBounds.Height);
             TextRenderer.DrawText(e.Graphics,(e.RowIndex + 1).ToString(),uiDataGridView1.RowHeadersDefaultCellStyle.Font, rectangle,uiDataGridView1.RowHeadersDefaultCellStyle.ForeColor,TextFormatFlags.VerticalCenter | TextFormatFlags.Right);
         }
-    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {         
+            for (int i = 0; i < 5; i++)
+            {
+                count[i] = 0;
+                count2[i] = 0;
+                uiDataGridView1.Rows[i + 11].Cells[1].Value = count[i];
+                uiDataGridView1.Rows[i + 11].Cells[2].Value = count2[i];
+            }
+        }
+
+        private void btn_SpecicationSetting_Click(object sender, EventArgs e)
+        {
+			formloadIndex = 2;
+			FormLogin flg = new FormLogin();
+			flg.ShowDialog();
+		}
+	}
 }

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utilities.BunifuTextBox.Transitions;
+using Utilities.BunifuToolTip.Transitions;
 
 namespace WY_App.Utility
 {
@@ -20,7 +22,104 @@ namespace WY_App.Utility
             Error = 3,
             Fatal = 4
         }
-     
+        public struct specification
+        {
+            public double value;
+            
+            public double min;
+
+            public double max;
+
+            public double adjustZ;
+
+            public double adjustF;
+
+        }
+        public class Specifications
+        {
+            public specification 总宽;
+            public specification 总长;
+            public specification 料宽;
+            public specification 胶宽;
+            public specification 长端;
+
+            public specification 左短端;
+            public specification 右短端;
+            public specification 左肩宽;
+            public specification 右肩宽;
+            public specification 左肩高;
+            public specification 右肩高;
+
+            public Specifications()
+            {
+                总宽.value = 0;
+                总宽.max = 0;
+                总宽.min = 0;
+                总宽.adjustZ = 0;
+                总宽.adjustF = 0;
+
+                总长.value = 0;
+                总长.max = 0;
+                总长.min = 0;
+                总长.adjustZ = 0;
+                总长.adjustF = 0;
+
+                料宽.value = 0;
+                料宽.max = 0;
+                料宽.min = 0;
+                料宽.adjustZ = 0;
+                料宽.adjustF = 0;
+
+                胶宽.value = 0;
+                胶宽.max = 0;
+                胶宽.min = 0;
+                胶宽.adjustZ = 0;
+                胶宽.adjustF = 0;
+
+                长端.value = 0;
+                长端.max = 0;
+                长端.min = 0;
+                长端.adjustZ = 0;
+                长端.adjustF = 0;
+
+                左短端.value = 0;
+                左短端.max = 0;
+                左短端.min = 0;
+                左短端.adjustZ = 0;
+                左短端.adjustF = 0;
+
+                右短端.value = 0;
+                右短端.max = 0;
+                右短端.min = 0;
+                右短端.adjustZ = 0;
+                右短端.adjustF = 0;
+
+                左肩宽.value = 0;
+                左肩宽.max = 0;
+                左肩宽.min = 0;
+                左肩宽.adjustZ = 0;
+                左肩宽.adjustF = 0;
+
+                右肩宽.value = 0;
+                右肩宽.max = 0;
+                右肩宽.min = 0;
+                右肩宽.adjustZ = 0;
+                右肩宽.adjustF = 0;
+
+                左肩高.value = 0;
+                左肩高.max = 0;
+                左肩高.min = 0;
+                左肩高.adjustZ = 0;
+                左肩高.adjustF = 0;
+
+                右肩高.value = 0;
+                右肩高.max = 0;
+                右肩高.min = 0;
+                右肩高.adjustZ = 0;
+                右肩高.adjustF = 0;
+            }
+        }
+        public static Specifications specifications = new Specifications();
         public class Commministion
         {
             /// <summary>
@@ -92,6 +191,7 @@ namespace WY_App.Utility
             /// tcp服务器 ip端口号
             /// </summary>
             public int TcpServerIpPort;
+
 
             /// <summary>
             /// 联机参数设置

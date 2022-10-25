@@ -133,6 +133,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="SpecificationsSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecificationsSettings.Designer.cs">
+      <DependentUpon>SpecificationsSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParamSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     <Compile Include="Utility\XMLHelper.cs" />
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecificationsSettings.resx">
+      <DependentUpon>SpecificationsSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParamSettings.resx">
       <DependentUpon>ParamSettings.cs</DependentUpon>

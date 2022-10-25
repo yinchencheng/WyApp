@@ -25,11 +25,19 @@ namespace WY_App
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if(bunifuCustomTextbox2.Text.Contains("toptics888"))
+            this.Close();
+            if (bunifuCustomTextbox2.Text.Contains("toptics888"))
             {
-                this.Close();               
-                ParamSettings paramSettings = new ParamSettings();
-                paramSettings.ShowDialog();
+                if (MainForm.formloadIndex == 1)
+                {
+					ParamSettings paramSettings = new ParamSettings();
+					paramSettings.ShowDialog();
+				}
+                else if (MainForm.formloadIndex == 2)
+                {
+					SpecificationsSettings flg = new SpecificationsSettings();
+					flg.ShowDialog();
+				}               
             }
             else
             {               
